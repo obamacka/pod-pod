@@ -16,7 +16,8 @@ android {
     namespace = "au.com.shiftyjelly.pocketcasts"
 
     defaultConfig {
-        applicationId = project.property("applicationId").toString()
+        // Pod-Pod: own applicationId so the fork installs side by side with Pocket Casts (see PODPOD.md).
+        applicationId = "com.obamacka.podpod"
         targetSdk = project.property("targetSdkVersion") as Int
         multiDexEnabled = true
     }
