@@ -41,6 +41,7 @@ import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvi
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.player.R
 import au.com.shiftyjelly.pocketcasts.player.viewmodel.PlayerViewModel
+import au.com.shiftyjelly.pocketcasts.podpod.animatePodPodPlayButtonShape
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 import com.airbnb.lottie.LottieProperty
 import com.airbnb.lottie.SimpleColorFilter
@@ -113,6 +114,7 @@ private fun Content(
             iconTint = playerColors.background01,
             circleColor = playerColors.contrast01,
             modifier = Modifier.padding(horizontal = 24.dp),
+            shape = animatePodPodPlayButtonShape(isPlaying = playerControlsData.playing),
         )
 
         SkipButton(
