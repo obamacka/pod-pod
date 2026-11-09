@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pod-Pod: overrides library resources by name (app resources win over library resources), so no upstream
+     file has to change. If upstream renames one of these, the override silently stops applying. -->
+<resources>
+    <!-- Material 3 Expressive: sheets use the extra large (28dp) corner. modules/services/ui: 8dp -->
+    <dimen name="bottom_sheet_corner_radius">28dp</dimen>
+</resources>
