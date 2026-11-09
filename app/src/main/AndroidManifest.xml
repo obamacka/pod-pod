@@ -792,6 +792,18 @@
         <!-- Disable Sentry exception tracking so we can turn it on based on the user preference -->
         <meta-data android:name="io.sentry.auto-init" android:value="false" />
 
+        <!-- Pod-Pod: crash reporter (installs before Application.onCreate, shows the trace in its own process) -->
+        <provider
+            android:name="au.com.shiftyjelly.pocketcasts.podpod.PodPodCrashInstaller"
+            android:authorities="${applicationId}.podpodcrash"
+            android:exported="false"
+            android:initOrder="1000" />
+        <activity
+            android:name="au.com.shiftyjelly.pocketcasts.podpod.PodPodCrashActivity"
+            android:exported="false"
+            android:process=":podpod_crash"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.DeviceDefault.DayNight" />
     </application>
 
 </manifest>
