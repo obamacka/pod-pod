@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pod-Pod launcher icon: foreground layer. Two overlapping "pods" with a play
+     triangle in the shared lens. Everything sits inside the 66dp safe zone
+     (max 29dp from the centre of the 108dp canvas). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Left pod -->
+    <path
+        android:fillColor="#FF7A59"
+        android:pathData="M25,54a19,19 0,1 0,38 0a19,19 0,1 0,-38 0z" />
+    <!-- Right pod -->
+    <path
+        android:fillColor="#39D3A0"
+        android:pathData="M45,54a19,19 0,1 0,38 0a19,19 0,1 0,-38 0z" />
+    <!-- Overlap lens -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,37.84A19,19 0,0 1,54 70.16A19,19 0,0 1,54 37.84z" />
+    <!-- Play triangle -->
+    <path
+        android:fillColor="#1B1F4B"
+        android:strokeColor="#1B1F4B"
+        android:strokeWidth="1.5"
+        android:strokeLineJoin="round"
+        android:pathData="M48.5,47L60,54L48.5,61z" />
+</vector>

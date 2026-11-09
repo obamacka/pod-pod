@@ -34,21 +34,22 @@ android {
         compose = true
     }
 
+    // Pod-Pod: every build type uses the Pod-Pod launcher icon (app/src/main/res/mipmap-anydpi*/ic_launcher_podpod.xml).
     buildTypes {
         named("debug") {
-            manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher_radioactive"
+            manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher_podpod"
         }
 
         named("debugProd") {
-            manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher_3"
+            manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher_podpod"
         }
 
         maybeCreate("prototype").apply {
-            manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher_prototype"
+            manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher_podpod"
         }
 
         named("release") {
-            manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher"
+            manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher_podpod"
         }
     }
 
