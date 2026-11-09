@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import au.com.shiftyjelly.pocketcasts.compose.plusGold
 import au.com.shiftyjelly.pocketcasts.images.R
+import au.com.shiftyjelly.pocketcasts.podpod.isLocalPlusAvailable
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.preferences.model.HeadphoneAction
 import com.automattic.eventhorizon.EventHorizon
@@ -35,7 +36,7 @@ class HeadphoneControlsSettingsPageViewModel @Inject constructor(
             settings.cachedSubscription.flow
                 .stateIn(viewModelScope)
                 .collect { subscription ->
-                    val isPaidUser = subscription != null
+                    val isPaidUser = settings.isLocalPlusAvailable(subscription)
 
                     _state.update { state ->
                         state.copy(

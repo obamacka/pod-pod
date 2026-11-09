@@ -59,6 +59,8 @@ import au.com.shiftyjelly.pocketcasts.podcasts.view.podcasts.PodcastsFragment
 import au.com.shiftyjelly.pocketcasts.podcasts.viewmodel.PodcastRatingsViewModel
 import au.com.shiftyjelly.pocketcasts.podcasts.viewmodel.PodcastViewModel
 import au.com.shiftyjelly.pocketcasts.podcasts.viewmodel.PodcastViewModel.PodcastTab
+import au.com.shiftyjelly.pocketcasts.podpod.hasLocalPlusFeatures
+import au.com.shiftyjelly.pocketcasts.podpod.isLocalPlusAvailable
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.preferences.model.AutoPlaySource
 import au.com.shiftyjelly.pocketcasts.reimagine.podcast.SharePodcastFragment
@@ -548,7 +550,7 @@ class PodcastFragment : BaseFragment() {
     private val onFoldersClicked: () -> Unit = {
         lifecycleScope.launch {
             eventHorizon.track(PodcastScreenFolderTappedEvent)
-            val isSignedInAsPlusOrPatron = viewModel.signInState.value?.isSignedInAsPlusOrPatron == true
+            val isSignedInAsPlusOrPatron = viewModel.signInState.value?.hasLocalPlusFeatures == true
             if (!isSignedInAsPlusOrPatron) {
                 OnboardingLauncher.openOnboardingFlow(requireActivity(), OnboardingFlow.Upsell(OnboardingUpgradeSource.FOLDERS_PODCAST_SCREEN))
                 return@launch
@@ -1107,7 +1109,7 @@ class PodcastFragment : BaseFragment() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 settings.cachedSubscription.flow.collect { subscription ->
-                    adapter?.setBookmarksAvailable(subscription != null)
+                    adapter?.setBookmarksAvailable(settings.isLocalPlusAvailable(subscription))
                 }
             }
         }

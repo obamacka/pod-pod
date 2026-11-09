@@ -16,6 +16,7 @@ import au.com.shiftyjelly.pocketcasts.models.entity.Podcast
 import au.com.shiftyjelly.pocketcasts.models.entity.PodcastEpisode
 import au.com.shiftyjelly.pocketcasts.player.view.bookmark.BookmarkArguments
 import au.com.shiftyjelly.pocketcasts.player.view.bookmark.search.BookmarkSearchHandler
+import au.com.shiftyjelly.pocketcasts.podpod.isLocalPlusAvailable
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.preferences.UserSetting
 import au.com.shiftyjelly.pocketcasts.preferences.model.ArtworkConfiguration.Element
@@ -196,7 +197,7 @@ class BookmarksViewModel
             settings.artworkConfiguration.flow,
             bookmarkSearchResults,
         ) { bookmarks, isMultiSelecting, selectedList, subscription, artworkConfiguration, searchResults ->
-            val isPaidUser = subscription != null
+            val isPaidUser = settings.isLocalPlusAvailable(subscription)
             _uiState.value = if (!isPaidUser) {
                 UiState.Upsell(sourceView)
             } else if (bookmarks.isEmpty()) {
