@@ -1,0 +1,75 @@
+# Pod-Pod fork: build the phone app (debugProd = production servers, debuggable,
+# signed with the committed debug.keystore so every build can update the previous one).
+# Tags named podpod-v* additionally publish a GitHub release with the APK.
+name: Pod-Pod build
+
+on:
+  push:
+    branches:
+      - pod-pod
+    tags:
+      - 'podpod-v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: podpod-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      # GitHub sets CI=true. Upstream's settings.gradle.kts / gradle_build_scan.gradle treat CI=true
+      # as "Automattic CI": a private remote build cache and publishing Gradle build scans.
+      # Pod-Pod wants neither, so present ourselves as a plain local build.
+      CI: 'false'
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: 'temurin'
+          # Matches .java-version (the JDK used to run Gradle). Bytecode target stays at libs.versions.java.
+          java-version: '21'
+
+      # SHA-pinned like upstream's workflows (v6.4.1).
+      - uses: gradle/actions/setup-gradle@8da46b539cd8fe6ab27ca75128919a18d757604c
+
+      - name: Build debugProd APK
+        # No secrets needed: without ~/.configure/.../secret.properties every secret falls back to "".
+        run: ./gradlew :app:assembleDebugProd --stacktrace
+
+      - name: Collect APK
+        id: apk
+        run: |
+          set -euo pipefail
+          APK=$(find app/build/outputs/apk/debugProd -name '*.apk' | head -n 1)
+          test -n "$APK"
+          if [[ "$GITHUB_REF" == refs/tags/* ]]; then
+            NAME="pod-pod-${GITHUB_REF_NAME#podpod-}.apk"
+          else
+            NAME="pod-pod-${GITHUB_SHA::7}.apk"
+          fi
+          mkdir -p dist
+          cp "$APK" "dist/$NAME"
+          echo "name=$NAME" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.apk.outputs.name }}
+          path: dist/${{ steps.apk.outputs.name }}
+          if-no-files-found: error
+
+      - name: Create GitHub release
+        if: startsWith(github.ref, 'refs/tags/podpod-v')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" "dist/${{ steps.apk.outputs.name }}" \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "Pod-Pod $GITHUB_REF_NAME" \
+            --notes "Pod-Pod phone app (debugProd build, package com.obamacka.podpod.debug), built from ${GITHUB_SHA}."
