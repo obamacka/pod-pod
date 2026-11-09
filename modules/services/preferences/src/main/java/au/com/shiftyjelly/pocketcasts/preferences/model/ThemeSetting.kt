@@ -53,6 +53,18 @@ enum class ThemeSetting(
         serverId = 8,
         analyticsValue = "classic",
     ),
+
+    // Pod-Pod: local-only themes. Theme settings are not synced, so these serverIds never leave the device.
+    PODPOD_DYNAMIC_LIGHT(
+        id = "podpodDynamicLight",
+        serverId = 100,
+        analyticsValue = "default_light",
+    ),
+    PODPOD_DYNAMIC_DARK(
+        id = "podpodDynamicDark",
+        serverId = 101,
+        analyticsValue = "default_dark",
+    ),
     ;
 
     class UserSettingPref(
