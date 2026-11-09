@@ -3,6 +3,7 @@ package au.com.shiftyjelly.pocketcasts.podcasts.view.folders
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import au.com.shiftyjelly.pocketcasts.models.type.SignInState
+import au.com.shiftyjelly.pocketcasts.podpod.hasLocalPlusFeatures
 import au.com.shiftyjelly.pocketcasts.repositories.notification.NewFeaturesAndTipsNotificationType
 import au.com.shiftyjelly.pocketcasts.repositories.notification.NotificationManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.FolderManager
@@ -185,7 +186,7 @@ class SuggestedFoldersViewModel @AssistedInject constructor(
         val useFoldersState: UseFoldersState,
     ) {
         val action
-            get() = if (signInState.isSignedInAsPlusOrPatron) {
+            get() = if (signInState.hasLocalPlusFeatures) {
                 when (existingFoldersCount) {
                     null -> null
                     0 -> SuggestedAction.UseFolders

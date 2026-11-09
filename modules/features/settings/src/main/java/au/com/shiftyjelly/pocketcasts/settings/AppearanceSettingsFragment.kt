@@ -25,6 +25,7 @@ import au.com.shiftyjelly.pocketcasts.compose.AppTheme
 import au.com.shiftyjelly.pocketcasts.compose.extensions.contentWithoutConsumedInsets
 import au.com.shiftyjelly.pocketcasts.models.type.SignInState
 import au.com.shiftyjelly.pocketcasts.payment.SubscriptionTier
+import au.com.shiftyjelly.pocketcasts.podpod.hasLocalPlusFeatures
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.repositories.subscription.SubscriptionManager
 import au.com.shiftyjelly.pocketcasts.settings.onboarding.OnboardingFlow
@@ -88,7 +89,7 @@ class AppearanceSettingsFragment :
                     useDynamicColorsForWidget = useDynamicColorsForWidget,
                 ),
                 showWidgetSection = Build.VERSION.SDK_INT >= Build.VERSION_CODES.S,
-                showUpgradeBanner = signInState?.isSignedInAsPlusOrPatron == false && !isUpgradeClosed,
+                showUpgradeBanner = signInState?.hasLocalPlusFeatures == false && !isUpgradeClosed,
                 bottomInset = with(LocalDensity.current) { bottomInsetPx.toDp() },
                 listener = this,
                 themePicker = { ThemePicker() },
@@ -211,7 +212,7 @@ class AppearanceSettingsFragment :
 
     @Composable
     private fun ThemePicker() {
-        val isPlusOrPatron = signInState?.isSignedInAsPlusOrPatron == true
+        val isPlusOrPatron = signInState?.hasLocalPlusFeatures == true
         AppearancePicker(
             options = themes.map { themeType ->
                 val isLocked = themeType.isPlus && !isPlusOrPatron
@@ -277,7 +278,7 @@ class AppearanceSettingsFragment :
 
     private fun onThemeClick(afterThemeType: Theme.ThemeType) {
         val beforeThemeType = selectedTheme ?: return
-        val validTheme = !afterThemeType.isPlus || signInState?.isSignedInAsPlusOrPatron == true
+        val validTheme = !afterThemeType.isPlus || signInState?.hasLocalPlusFeatures == true
         if (validTheme) {
             selectedTheme = afterThemeType
             (activity as? AppCompatActivity)?.let {
