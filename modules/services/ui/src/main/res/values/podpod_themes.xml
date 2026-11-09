@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pod-Pod: "Pod-Pod Dynamic" Material You themes (Theme.ThemeType.PODPOD_DYNAMIC_LIGHT / _DARK).
+     They inherit every upstream token from ThemeLight / ThemeDark and override the neutral and accent tokens
+     with Material 3 colour roles (podpod_m3_colors.xml): wallpaper colours on API 31+, a static fallback below. -->
+<resources>
+
+    <style name="PodPodDynamicLight" parent="ThemeLight">
+        <!-- Token -> Material 3 role. Keep in sync with toPodPodThemeColors() in compose/.../podpod/PodPodColorSchemes.kt -->
+        <item name="primary_ui_01">@color/podpod_m3_light_surface</item>
+        <item name="primary_ui_01_active">@color/podpod_m3_light_surface_container</item>
+        <item name="primary_ui_02">@color/podpod_m3_light_surface_container_low</item>
+        <item name="primary_ui_02_selected">@color/podpod_m3_light_secondary_container</item>
+        <item name="primary_ui_02_active">@color/podpod_m3_light_surface_container</item>
+        <item name="primary_ui_03">@color/podpod_m3_light_surface_container</item>
+        <item name="primary_ui_04">@color/podpod_m3_light_surface</item>
+        <item name="primary_ui_05">@color/podpod_m3_light_outline_variant</item>
+        <item name="primary_ui_05_selected">@color/podpod_m3_light_outline</item>
+        <item name="primary_ui_06">@color/podpod_m3_light_surface_container_high</item>
+        <item name="primary_icon_01">@color/podpod_m3_light_primary</item>
+        <item name="primary_icon_01_active">@color/podpod_m3_light_inverse_primary</item>
+        <item name="primary_icon_02">@color/podpod_m3_light_on_surface_variant</item>
+        <item name="primary_icon_02_selected">@color/podpod_m3_light_primary</item>
+        <item name="primary_icon_02_active">@color/podpod_m3_light_on_surface_variant</item>
+        <item name="primary_icon_03">@color/podpod_m3_light_on_surface_variant</item>
+        <item name="primary_icon_03_active">@color/podpod_m3_light_primary</item>
+        <item name="primary_text_01">@color/podpod_m3_light_on_surface</item>
+        <item name="primary_text_02">@color/podpod_m3_light_on_surface_variant</item>
+        <item name="primary_text_02_selected">@color/podpod_m3_light_primary</item>
+        <item name="primary_field_01">@color/podpod_m3_light_surface_container_highest</item>
+        <item name="primary_field_01_active">@color/podpod_m3_light_surface_variant</item>
+        <item name="primary_field_02">@color/podpod_m3_light_surface_container_low</item>
+        <item name="primary_field_02_active">@color/podpod_m3_light_surface_container_lowest</item>
+        <item name="primary_field_03">@color/podpod_m3_light_outline</item>
+        <item name="primary_field_03_active">@color/podpod_m3_light_primary</item>
+        <item name="primary_interactive_01">@color/podpod_m3_light_primary</item>
+        <item name="primary_interactive_01_hover">@color/podpod_m3_light_primary</item>
+        <item name="primary_interactive_01_active">@color/podpod_m3_light_inverse_primary</item>
+        <item name="primary_interactive_01_disabled">@color/podpod_m3_light_outline_variant</item>
+        <item name="primary_interactive_02">@color/podpod_m3_light_on_primary</item>
+        <item name="primary_interactive_02_hover">@color/podpod_m3_light_surface_container_high</item>
+        <item name="primary_interactive_02_active">@color/podpod_m3_light_secondary_container</item>
+        <item name="primary_interactive_03">@color/podpod_m3_light_outline_variant</item>
+        <item name="secondary_ui_01">@color/podpod_m3_light_surface</item>
+        <item name="secondary_ui_02">@color/podpod_m3_light_outline_variant</item>
+        <item name="secondary_icon_01">@color/podpod_m3_light_on_surface_variant</item>
+        <item name="secondary_icon_02">@color/podpod_m3_light_outline</item>
+        <item name="secondary_text_01">@color/podpod_m3_light_on_surface</item>
+        <item name="secondary_text_02">@color/podpod_m3_light_on_surface_variant</item>
+        <item name="secondary_field_01">@color/podpod_m3_light_surface_container_highest</item>
+        <item name="secondary_field_01_active">@color/podpod_m3_light_surface_variant</item>
+        <item name="secondary_interactive_01">@color/podpod_m3_light_primary</item>
+        <item name="secondary_interactive_01_hover">@color/podpod_m3_light_primary</item>
+        <item name="secondary_interactive_01_active">@color/podpod_m3_light_inverse_primary</item>
+        <item name="support_01">@color/podpod_m3_light_primary</item>
+        <item name="support_03">@color/podpod_m3_light_primary</item>
+        <item name="support_05">@color/podpod_m3_light_error</item>
+        <item name="android:textColorPrimary">@color/podpod_m3_light_on_surface</item>
+        <item name="android:textColorSecondary">@color/podpod_m3_light_on_surface_variant</item>
+        <item name="colorSearchBox">@color/podpod_m3_light_surface_container_highest</item>
+        <item name="navigationCheckedColor">@color/podpod_m3_light_primary</item>
+    </style>
+
+    <style name="PodPodDynamicDark" parent="ThemeDark">
+        <!-- Token -> Material 3 role. Keep in sync with toPodPodThemeColors() in compose/.../podpod/PodPodColorSchemes.kt -->
+        <item name="primary_ui_01">@color/podpod_m3_dark_surface</item>
+        <item name="primary_ui_01_active">@color/podpod_m3_dark_surface_container</item>
+        <item name="primary_ui_02">@color/podpod_m3_dark_surface_container_low</item>
+        <item name="primary_ui_02_selected">@color/podpod_m3_dark_secondary_container</item>
+        <item name="primary_ui_02_active">@color/podpod_m3_dark_surface_container</item>
+        <item name="primary_ui_03">@color/podpod_m3_dark_surface_container</item>
+        <item name="primary_ui_04">@color/podpod_m3_dark_surface</item>
+        <item name="primary_ui_05">@color/podpod_m3_dark_outline_variant</item>
+        <item name="primary_ui_05_selected">@color/podpod_m3_dark_outline</item>
+        <item name="primary_ui_06">@color/podpod_m3_dark_surface_container_high</item>
+        <item name="primary_icon_01">@color/podpod_m3_dark_primary</item>
+        <item name="primary_icon_01_active">@color/podpod_m3_dark_inverse_primary</item>
+        <item name="primary_icon_02">@color/podpod_m3_dark_on_surface_variant</item>
+        <item name="primary_icon_02_selected">@color/podpod_m3_dark_primary</item>
+        <item name="primary_icon_02_active">@color/podpod_m3_dark_on_surface_variant</item>
+        <item name="primary_icon_03">@color/podpod_m3_dark_on_surface_variant</item>
+        <item name="primary_icon_03_active">@color/podpod_m3_dark_primary</item>
+        <item name="primary_text_01">@color/podpod_m3_dark_on_surface</item>
+        <item name="primary_text_02">@color/podpod_m3_dark_on_surface_variant</item>
+        <item name="primary_text_02_selected">@color/podpod_m3_dark_primary</item>
+        <item name="primary_field_01">@color/podpod_m3_dark_surface_container_highest</item>
+        <item name="primary_field_01_active">@color/podpod_m3_dark_surface_variant</item>
+        <item name="primary_field_02">@color/podpod_m3_dark_surface_container_low</item>
+        <item name="primary_field_02_active">@color/podpod_m3_dark_surface_container_lowest</item>
+        <item name="primary_field_03">@color/podpod_m3_dark_outline</item>
+        <item name="primary_field_03_active">@color/podpod_m3_dark_primary</item>
+        <item name="primary_interactive_01">@color/podpod_m3_dark_primary</item>
+        <item name="primary_interactive_01_hover">@color/podpod_m3_dark_primary</item>
+        <item name="primary_interactive_01_active">@color/podpod_m3_dark_inverse_primary</item>
+        <item name="primary_interactive_01_disabled">@color/podpod_m3_dark_outline_variant</item>
+        <item name="primary_interactive_02">@color/podpod_m3_dark_on_primary</item>
+        <item name="primary_interactive_02_hover">@color/podpod_m3_dark_surface_container_high</item>
+        <item name="primary_interactive_02_active">@color/podpod_m3_dark_secondary_container</item>
+        <item name="primary_interactive_03">@color/podpod_m3_dark_outline_variant</item>
+        <item name="secondary_ui_01">@color/podpod_m3_dark_surface</item>
+        <item name="secondary_ui_02">@color/podpod_m3_dark_outline_variant</item>
+        <item name="secondary_icon_01">@color/podpod_m3_dark_on_surface_variant</item>
+        <item name="secondary_icon_02">@color/podpod_m3_dark_outline</item>
+        <item name="secondary_text_01">@color/podpod_m3_dark_on_surface</item>
+        <item name="secondary_text_02">@color/podpod_m3_dark_on_surface_variant</item>
+        <item name="secondary_field_01">@color/podpod_m3_dark_surface_container_highest</item>
+        <item name="secondary_field_01_active">@color/podpod_m3_dark_surface_variant</item>
+        <item name="secondary_interactive_01">@color/podpod_m3_dark_primary</item>
+        <item name="secondary_interactive_01_hover">@color/podpod_m3_dark_primary</item>
+        <item name="secondary_interactive_01_active">@color/podpod_m3_dark_inverse_primary</item>
+        <item name="support_01">@color/podpod_m3_dark_primary</item>
+        <item name="support_03">@color/podpod_m3_dark_primary</item>
+        <item name="support_05">@color/podpod_m3_dark_error</item>
+        <item name="android:textColorPrimary">@color/podpod_m3_dark_on_surface</item>
+        <item name="android:textColorSecondary">@color/podpod_m3_dark_on_surface_variant</item>
+        <item name="colorSearchBox">@color/podpod_m3_dark_surface_container_highest</item>
+        <item name="navigationCheckedColor">@color/podpod_m3_dark_primary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pod-Pod: Material 3 colour roles for the "Pod-Pod Dynamic" themes (podpod_themes.xml). -->
+<!-- API 31-33: wallpaper tonal palettes. Same palettes as material3 dynamicLight/DarkColorScheme on these APIs;
+     tones the system does not ship (98, 96, 94, 92, 6, 12, 17, 22) use the nearest shipped tone. -->
+<resources>
+    <color name="podpod_m3_light_surface">@android:color/system_neutral2_10</color>
+    <color name="podpod_m3_light_surface_container_lowest">@android:color/system_neutral2_0</color>
+    <color name="podpod_m3_light_surface_container_low">@android:color/system_neutral2_50</color>
+    <color name="podpod_m3_light_surface_container">@android:color/system_neutral2_50</color>
+    <color name="podpod_m3_light_surface_container_high">@android:color/system_neutral2_100</color>
+    <color name="podpod_m3_light_surface_container_highest">@android:color/system_neutral2_100</color>
+    <color name="podpod_m3_light_surface_variant">@android:color/system_neutral2_100</color>
+    <color name="podpod_m3_light_on_surface">@android:color/system_neutral2_900</color>
+    <color name="podpod_m3_light_on_surface_variant">@android:color/system_neutral2_700</color>
+    <color name="podpod_m3_light_outline">@android:color/system_neutral2_500</color>
+    <color name="podpod_m3_light_outline_variant">@android:color/system_neutral2_200</color>
+    <color name="podpod_m3_light_primary">@android:color/system_accent1_600</color>
+    <color name="podpod_m3_light_on_primary">@android:color/system_accent1_0</color>
+    <color name="podpod_m3_light_inverse_primary">@android:color/system_accent1_200</color>
+    <color name="podpod_m3_light_primary_container">@android:color/system_accent1_100</color>
+    <color name="podpod_m3_light_on_primary_container">@android:color/system_accent1_900</color>
+    <color name="podpod_m3_light_secondary_container">@android:color/system_accent2_100</color>
+    <color name="podpod_m3_light_on_secondary_container">@android:color/system_accent2_900</color>
+    <color name="podpod_m3_dark_surface">@android:color/system_neutral2_900</color>
+    <color name="podpod_m3_dark_surface_container_lowest">@android:color/system_neutral2_1000</color>
+    <color name="podpod_m3_dark_surface_container_low">@android:color/system_neutral2_900</color>
+    <color name="podpod_m3_dark_surface_container">@android:color/system_neutral2_800</color>
+    <color name="podpod_m3_dark_surface_container_high">@android:color/system_neutral2_800</color>
+    <color name="podpod_m3_dark_surface_container_highest">@android:color/system_neutral2_700</color>
+    <color name="podpod_m3_dark_surface_variant">@android:color/system_neutral2_700</color>
+    <color name="podpod_m3_dark_on_surface">@android:color/system_neutral2_100</color>
+    <color name="podpod_m3_dark_on_surface_variant">@android:color/system_neutral2_200</color>
+    <color name="podpod_m3_dark_outline">@android:color/system_neutral2_400</color>
+    <color name="podpod_m3_dark_outline_variant">@android:color/system_neutral2_700</color>
+    <color name="podpod_m3_dark_primary">@android:color/system_accent1_200</color>
+    <color name="podpod_m3_dark_on_primary">@android:color/system_accent1_800</color>
+    <color name="podpod_m3_dark_inverse_primary">@android:color/system_accent1_600</color>
+    <color name="podpod_m3_dark_primary_container">@android:color/system_accent1_700</color>
+    <color name="podpod_m3_dark_on_primary_container">@android:color/system_accent1_100</color>
+    <color name="podpod_m3_dark_secondary_container">@android:color/system_accent2_700</color>
+    <color name="podpod_m3_dark_on_secondary_container">@android:color/system_accent2_100</color>
+</resources>

@@ -76,6 +76,29 @@ class Theme @Inject constructor(private val settings: Settings) {
         val darkTheme: Boolean,
         val isPlus: Boolean,
     ) {
+        // Pod-Pod: Material You themes whose tokens come from the wallpaper (see podpod_themes.xml)
+        PODPOD_DYNAMIC_LIGHT(
+            themeSetting = ThemeSetting.PODPOD_DYNAMIC_LIGHT,
+            labelId = R.string.podpod_theme_dynamic_light,
+            resourceId = R.style.PodPodDynamicLight,
+            iconResourceId = R.drawable.ic_theme_podpod_dynamic_light,
+            analyticsValue = AppThemeType.DefaultLight,
+            toolbarLightIcons = false,
+            backgroundLightIcons = false,
+            darkTheme = false,
+            isPlus = false,
+        ),
+        PODPOD_DYNAMIC_DARK(
+            themeSetting = ThemeSetting.PODPOD_DYNAMIC_DARK,
+            labelId = R.string.podpod_theme_dynamic_dark,
+            resourceId = R.style.PodPodDynamicDark,
+            iconResourceId = R.drawable.ic_theme_podpod_dynamic_dark,
+            analyticsValue = AppThemeType.DefaultDark,
+            toolbarLightIcons = true,
+            backgroundLightIcons = true,
+            darkTheme = true,
+            isPlus = false,
+        ),
         LIGHT(
             themeSetting = ThemeSetting.LIGHT,
             labelId = LR.string.settings_theme_light,
@@ -179,6 +202,8 @@ class Theme @Inject constructor(private val settings: Settings) {
 
         companion object {
             fun fromThemeSetting(themeSetting: ThemeSetting): ThemeType = when (themeSetting) {
+                ThemeSetting.PODPOD_DYNAMIC_LIGHT -> Theme.ThemeType.PODPOD_DYNAMIC_LIGHT
+                ThemeSetting.PODPOD_DYNAMIC_DARK -> Theme.ThemeType.PODPOD_DYNAMIC_DARK
                 ThemeSetting.LIGHT -> Theme.ThemeType.LIGHT
                 ThemeSetting.DARK -> Theme.ThemeType.DARK
                 ThemeSetting.ROSE -> Theme.ThemeType.ROSE

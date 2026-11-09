@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pod-Pod: Material 3 colour roles for the "Pod-Pod Dynamic" themes (podpod_themes.xml). -->
+<!-- Static fallback below API 31: TonalSpot scheme from seed #39D3A0 (Pod-Pod icon mint).
+     Keep in sync with PodPodFallbackLight/DarkColorScheme in compose/.../podpod/PodPodColorSchemes.kt. -->
+<resources>
+    <color name="podpod_m3_light_surface">#F5FBF5</color>
+    <color name="podpod_m3_light_surface_container_lowest">#FFFFFF</color>
+    <color name="podpod_m3_light_surface_container_low">#EFF5EF</color>
+    <color name="podpod_m3_light_surface_container">#EAEFEA</color>
+    <color name="podpod_m3_light_surface_container_high">#E4EAE4</color>
+    <color name="podpod_m3_light_surface_container_highest">#DEE4DF</color>
+    <color name="podpod_m3_light_surface_variant">#DBE5DE</color>
+    <color name="podpod_m3_light_on_surface">#171D1A</color>
+    <color name="podpod_m3_light_on_surface_variant">#404944</color>
+    <color name="podpod_m3_light_outline">#707973</color>
+    <color name="podpod_m3_light_outline_variant">#BFC9C2</color>
+    <color name="podpod_m3_light_primary">#1D6B50</color>
+    <color name="podpod_m3_light_on_primary">#FFFFFF</color>
+    <color name="podpod_m3_light_inverse_primary">#8BD5B5</color>
+    <color name="podpod_m3_light_primary_container">#A7F2D0</color>
+    <color name="podpod_m3_light_on_primary_container">#00513A</color>
+    <color name="podpod_m3_light_secondary_container">#CFE9DA</color>
+    <color name="podpod_m3_light_on_secondary_container">#354B41</color>
+    <color name="podpod_m3_light_error">#B3261E</color>
+    <color name="podpod_m3_dark_surface">#0F1512</color>
+    <color name="podpod_m3_dark_surface_container_lowest">#0A0F0D</color>
+    <color name="podpod_m3_dark_surface_container_low">#171D1A</color>
+    <color name="podpod_m3_dark_surface_container">#1B211E</color>
+    <color name="podpod_m3_dark_surface_container_high">#252B28</color>
+    <color name="podpod_m3_dark_surface_container_highest">#303633</color>
+    <color name="podpod_m3_dark_surface_variant">#404944</color>
+    <color name="podpod_m3_dark_on_surface">#DEE4DF</color>
+    <color name="podpod_m3_dark_on_surface_variant">#BFC9C2</color>
+    <color name="podpod_m3_dark_outline">#89938D</color>
+    <color name="podpod_m3_dark_outline_variant">#404944</color>
+    <color name="podpod_m3_dark_primary">#8BD5B5</color>
+    <color name="podpod_m3_dark_on_primary">#003827</color>
+    <color name="podpod_m3_dark_inverse_primary">#1D6B50</color>
+    <color name="podpod_m3_dark_primary_container">#00513A</color>
+    <color name="podpod_m3_dark_on_primary_container">#A7F2D0</color>
+    <color name="podpod_m3_dark_secondary_container">#354B41</color>
+    <color name="podpod_m3_dark_on_secondary_container">#CFE9DA</color>
+    <color name="podpod_m3_dark_error">#F2B8B5</color>
+</resources>
