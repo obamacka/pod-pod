@@ -52,6 +52,7 @@ import au.com.shiftyjelly.pocketcasts.podcasts.viewmodel.PodcastRatingsViewModel
 import au.com.shiftyjelly.pocketcasts.podcasts.viewmodel.PodcastRatingsViewModel.RatingState
 import au.com.shiftyjelly.pocketcasts.podcasts.viewmodel.PodcastViewModel.PodcastTab
 import au.com.shiftyjelly.pocketcasts.podcasts.viewmodel.podcast.RecommendationsResult
+import au.com.shiftyjelly.pocketcasts.podpod.hasLocalPlusFeatures
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.preferences.model.ArtworkConfiguration.Element
 import au.com.shiftyjelly.pocketcasts.repositories.images.PocketCastsImageRequestFactory
@@ -859,7 +860,7 @@ class PodcastAdapter(
                         areNotificationsEnabled = podcast.isShowNotifications,
                         isFundingUrlAvailable = podcast.fundingUrl != null,
                         folderIcon = when {
-                            !signInState.isSignedInAsPlusOrPatron -> PodcastFolderIcon.BuyFolders
+                            !signInState.hasLocalPlusFeatures -> PodcastFolderIcon.BuyFolders
                             podcast.folderUuid != null -> PodcastFolderIcon.AddedToFolder
                             else -> PodcastFolderIcon.NotInFolder
                         },

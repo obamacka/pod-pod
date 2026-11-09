@@ -17,6 +17,7 @@ import au.com.shiftyjelly.pocketcasts.models.entity.PodcastEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.FolderItem
 import au.com.shiftyjelly.pocketcasts.models.to.PlaylistEpisode
 import au.com.shiftyjelly.pocketcasts.models.type.PodcastsSortType
+import au.com.shiftyjelly.pocketcasts.podpod.isLocalPlusAvailable
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.preferences.model.AutoPlaySource
 import au.com.shiftyjelly.pocketcasts.repositories.images.PodcastImage
@@ -231,7 +232,7 @@ class BrowseTreeProvider @Inject constructor(
     }
 
     internal suspend fun loadPodcastsChildren(context: Context): List<MediaItem> {
-        return if (settings.cachedSubscription.value != null) {
+        return if (settings.isLocalPlusAvailable()) {
             folderManager.getHomeFolder().mapNotNull { item ->
                 when (item) {
                     is FolderItem.Folder -> convertFolderToMediaItem(context, item.folder)
@@ -255,7 +256,7 @@ class BrowseTreeProvider @Inject constructor(
     }
 
     internal suspend fun loadFolderPodcastsChildren(folderUuid: String, context: Context): List<MediaItem> {
-        return if (settings.cachedSubscription.value != null) {
+        return if (settings.isLocalPlusAvailable()) {
             folderManager.findFolderPodcastsSorted(folderUuid).mapNotNull { podcast ->
                 convertPodcastToMediaItem(
                     podcast = podcast,

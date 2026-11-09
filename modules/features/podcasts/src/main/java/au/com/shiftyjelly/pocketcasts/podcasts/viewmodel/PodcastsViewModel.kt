@@ -8,6 +8,7 @@ import au.com.shiftyjelly.pocketcasts.models.to.FolderItem
 import au.com.shiftyjelly.pocketcasts.models.type.PodcastsSortType
 import au.com.shiftyjelly.pocketcasts.models.type.SignInState
 import au.com.shiftyjelly.pocketcasts.podcasts.view.folders.SuggestedFoldersPopupPolicy
+import au.com.shiftyjelly.pocketcasts.podpod.hasLocalPlusFeatures
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.preferences.model.BadgeType
 import au.com.shiftyjelly.pocketcasts.repositories.ads.BlazeAdsManager
@@ -165,7 +166,7 @@ class PodcastsViewModel @AssistedInject constructor(
             items = items,
             unfilteredItems = unfilteredItems,
             folder = folders.find { it.uuid == folderUuid }?.folder,
-            isSignedInAsPlusOrPatron = signInState.isSignedInAsPlusOrPatron,
+            isSignedInAsPlusOrPatron = signInState.hasLocalPlusFeatures,
         )
     }
 
@@ -175,7 +176,7 @@ class PodcastsViewModel @AssistedInject constructor(
         sortType: PodcastsSortType,
         signInState: SignInState,
     ) = when {
-        signInState.isNoAccountOrFree -> buildPodcastItems(podcasts, sortType)
+        signInState.isNoAccountOrFree && !signInState.hasLocalPlusFeatures -> buildPodcastItems(podcasts, sortType)
 
         folderUuid == null -> buildHomeFolderItems(podcasts, folders, sortType)
 

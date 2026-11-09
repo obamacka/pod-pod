@@ -28,6 +28,7 @@ import au.com.shiftyjelly.pocketcasts.compose.navigation.slideInToStart
 import au.com.shiftyjelly.pocketcasts.compose.navigation.slideOutToEnd
 import au.com.shiftyjelly.pocketcasts.compose.navigation.slideOutToStart
 import au.com.shiftyjelly.pocketcasts.podcasts.view.folders.SuggestedFoldersViewModel.UseFoldersState.Applied
+import au.com.shiftyjelly.pocketcasts.podpod.hasLocalPlusFeatures
 import au.com.shiftyjelly.pocketcasts.settings.onboarding.OnboardingFlow
 import au.com.shiftyjelly.pocketcasts.settings.onboarding.OnboardingLauncher
 import au.com.shiftyjelly.pocketcasts.settings.onboarding.SuggestedFoldersAction
@@ -124,8 +125,8 @@ class SuggestedFoldersFragment : BaseDialogFragment() {
                     SuggestedFoldersPage(
                         folders = state.suggestedFolders,
                         action = state.action,
-                        onActionClick = { state.action?.let { handleSuggestedAction(it, state.signInState.isSignedInAsPlusOrPatron) } },
-                        onCreateCustomFolderClick = { handleCustomFolderCreation(state.signInState.isSignedInAsPlusOrPatron) },
+                        onActionClick = { state.action?.let { handleSuggestedAction(it, state.signInState.hasLocalPlusFeatures) } },
+                        onCreateCustomFolderClick = { handleCustomFolderCreation(state.signInState.hasLocalPlusFeatures) },
                         onFolderClick = { folder ->
                             viewModel.trackPreviewFolderTapped(folder)
                             navController.navigate(SuggestedFoldersNavRoutes.folderDetailsDestination(folder.name))
