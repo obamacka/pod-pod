@@ -58,6 +58,10 @@
         <item name="android:textColorSecondary">@color/podpod_m3_light_on_surface_variant</item>
         <item name="colorSearchBox">@color/podpod_m3_light_surface_container_highest</item>
         <item name="navigationCheckedColor">@color/podpod_m3_light_primary</item>
+        <!-- Material 3 Expressive shapes for Material Components views -->
+        <item name="shapeAppearanceMediumComponent">@style/PodPod.ShapeAppearance.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/PodPod.ShapeAppearance.Large</item>
+        <item name="materialButtonStyle">@style/PodPod.Widget.Button</item>
     </style>
 
     <style name="PodPodDynamicDark" parent="ThemeDark">
@@ -114,6 +118,30 @@
         <item name="android:textColorSecondary">@color/podpod_m3_dark_on_surface_variant</item>
         <item name="colorSearchBox">@color/podpod_m3_dark_surface_container_highest</item>
         <item name="navigationCheckedColor">@color/podpod_m3_dark_primary</item>
+        <!-- Material 3 Expressive shapes for Material Components views -->
+        <item name="shapeAppearanceMediumComponent">@style/PodPod.ShapeAppearance.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/PodPod.ShapeAppearance.Large</item>
+        <item name="materialButtonStyle">@style/PodPod.Widget.Button</item>
+    </style>
+
+    <!-- Expressive shape scale: cards/dialogs 16dp, sheets 28dp (M3 extra large), buttons full -->
+    <style name="PodPod.ShapeAppearance.Medium" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="PodPod.ShapeAppearance.Large" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="PodPod.ShapeAppearance.Full" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="PodPod.Widget.Button" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearance">@style/PodPod.ShapeAppearance.Full</item>
     </style>
 
 </resources>

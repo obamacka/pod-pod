@@ -17,7 +17,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.unit.dp
+import au.com.shiftyjelly.pocketcasts.podpod.PodPodSheetCornerRadius
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -51,7 +51,7 @@ fun ModalBottomSheet(
                 },
             )
         },
-        sheetShape = RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp),
+        sheetShape = RoundedCornerShape(topStart = PodPodSheetCornerRadius, topEnd = PodPodSheetCornerRadius),
         scrimColor = Color.Black.copy(alpha = .25f),
         modifier = modifier,
         content = {},

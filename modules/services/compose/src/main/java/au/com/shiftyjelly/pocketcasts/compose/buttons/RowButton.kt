@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground
 import au.com.shiftyjelly.pocketcasts.compose.theme
+import au.com.shiftyjelly.pocketcasts.podpod.PodPodRowButtonCornerRadius
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 import au.com.shiftyjelly.pocketcasts.images.R as IR
 
@@ -39,7 +40,7 @@ fun RowButton(
     fontFamily: FontFamily? = null,
     fontWeight: FontWeight? = null,
     @DrawableRes leadingIcon: Int? = null,
-    cornerRadius: Dp = 12.dp,
+    cornerRadius: Dp = PodPodRowButtonCornerRadius,
     textVerticalPadding: Dp = 6.dp,
     @DrawableRes textIcon: Int? = null,
     contentDescription: String? = null,

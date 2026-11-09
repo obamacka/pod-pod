@@ -13,6 +13,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.isSpecified
 import androidx.compose.ui.unit.sp
+import au.com.shiftyjelly.pocketcasts.podpod.PodPodExpressiveTheme
+import au.com.shiftyjelly.pocketcasts.podpod.PodPodMaterial2Shapes
 import au.com.shiftyjelly.pocketcasts.podpod.rememberPodPodDynamicThemeColors
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 
@@ -46,10 +48,13 @@ fun AppTheme(
     val theme = PocketCastsTheme(type = themeType, colors = colors)
 
     CompositionLocalProvider(LocalColors provides theme) {
-        MaterialTheme(
-            colors = buildMaterialColors(colors, theme.isLight),
-            content = content,
-        )
+        PodPodExpressiveTheme(themeType = themeType, colors = colors) {
+            MaterialTheme(
+                colors = buildMaterialColors(colors, theme.isLight),
+                shapes = PodPodMaterial2Shapes,
+                content = content,
+            )
+        }
     }
 }
 
