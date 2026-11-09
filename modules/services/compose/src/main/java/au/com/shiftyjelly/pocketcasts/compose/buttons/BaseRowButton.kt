@@ -31,6 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import au.com.shiftyjelly.pocketcasts.compose.components.TextP40
 import au.com.shiftyjelly.pocketcasts.compose.theme
+import au.com.shiftyjelly.pocketcasts.podpod.PodPodRowButtonCornerRadius
 
 @Composable
 fun BaseRowButton(
@@ -47,7 +48,7 @@ fun BaseRowButton(
     fontFamily: FontFamily? = null,
     fontWeight: FontWeight? = null,
     leadingIcon: @Composable (() -> Unit)? = null,
-    cornerRadius: Dp = 12.dp,
+    cornerRadius: Dp = PodPodRowButtonCornerRadius,
     textVerticalPadding: Dp = 6.dp,
     @DrawableRes textIcon: Int? = null,
     contentDescription: String? = null,
@@ -110,7 +111,7 @@ fun BaseRowButton(
     border: BorderStroke? = null,
     colors: ButtonColors = ButtonDefaults.buttonColors(),
     elevation: ButtonElevation? = ButtonDefaults.elevation(),
-    cornerRadius: Dp = 12.dp,
+    cornerRadius: Dp = PodPodRowButtonCornerRadius,
     contentDescription: String? = null,
     content: @Composable () -> Unit,
 ) {
