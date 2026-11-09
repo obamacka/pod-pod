@@ -62,6 +62,8 @@
         <item name="shapeAppearanceMediumComponent">@style/PodPod.ShapeAppearance.Medium</item>
         <item name="shapeAppearanceLargeComponent">@style/PodPod.ShapeAppearance.Large</item>
         <item name="materialButtonStyle">@style/PodPod.Widget.Button</item>
+        <!-- Expressive navigation bar: pill active indicator (activity_main.xml uses ?attr/bottomNavigationStyle) -->
+        <item name="bottomNavigationStyle">@style/PodPod.Widget.BottomNavigationView</item>
     </style>
 
     <style name="PodPodDynamicDark" parent="ThemeDark">
@@ -122,6 +124,8 @@
         <item name="shapeAppearanceMediumComponent">@style/PodPod.ShapeAppearance.Medium</item>
         <item name="shapeAppearanceLargeComponent">@style/PodPod.ShapeAppearance.Large</item>
         <item name="materialButtonStyle">@style/PodPod.Widget.Button</item>
+        <!-- Expressive navigation bar: pill active indicator (activity_main.xml uses ?attr/bottomNavigationStyle) -->
+        <item name="bottomNavigationStyle">@style/PodPod.Widget.BottomNavigationView</item>
     </style>
 
     <!-- Expressive shape scale: cards/dialogs 16dp, sheets 28dp (M3 extra large), buttons full -->
@@ -142,6 +146,25 @@
 
     <style name="PodPod.Widget.Button" parent="Widget.MaterialComponents.Button">
         <item name="shapeAppearance">@style/PodPod.ShapeAppearance.Full</item>
+    </style>
+
+    <!-- Material 3 Expressive navigation bar, built on the Material Components style the app already uses
+         (Widget.Material3* styles need M3 theme attributes these themes do not define): 64dp bar,
+         56x32dp full-round active indicator in the secondary container colour. -->
+    <style name="PodPod.Widget.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:minHeight">64dp</item>
+        <item name="itemPaddingTop">6dp</item>
+        <item name="itemPaddingBottom">6dp</item>
+        <item name="activeIndicatorLabelPadding">4dp</item>
+        <item name="itemActiveIndicatorStyle">@style/PodPod.Widget.BottomNavigationView.ActiveIndicator</item>
+    </style>
+
+    <style name="PodPod.Widget.BottomNavigationView.ActiveIndicator" parent="">
+        <item name="android:width">56dp</item>
+        <item name="android:height">32dp</item>
+        <item name="marginHorizontal">4dp</item>
+        <item name="shapeAppearance">@style/PodPod.ShapeAppearance.Full</item>
+        <item name="android:color">?attr/primary_ui_02_selected</item>
     </style>
 
 </resources>
