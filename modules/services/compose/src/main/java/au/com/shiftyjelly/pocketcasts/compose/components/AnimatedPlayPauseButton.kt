@@ -17,6 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
@@ -51,6 +52,7 @@ fun AnimatedPlayPauseButton(
     iconHeight: Dp = 40.dp,
     circleSize: Dp = 80.dp,
     circleColor: Color = Color.White,
+    shape: Shape = CircleShape, // Pod-Pod: lets the player morph the button shape
 ) {
     val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(UR.raw.large_play_button))
     val lottieAnimatable = rememberLottieAnimatable()
@@ -72,7 +74,7 @@ fun AnimatedPlayPauseButton(
     Box(
         modifier = modifier
             .size(circleSize)
-            .clip(CircleShape)
+            .clip(shape)
             .background(circleColor)
             .semantics(mergeDescendants = true) {
                 this.contentDescription = contentDescription
