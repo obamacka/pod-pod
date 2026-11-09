@@ -2879,10 +2879,10 @@ object ThemeColor {
 
     @ColorInt fun primaryUi01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryUi01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryUi01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -2910,10 +2910,10 @@ object ThemeColor {
 
     @ColorInt fun primaryUi01Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryUi01ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryUi01ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -2941,10 +2941,10 @@ object ThemeColor {
 
     @ColorInt fun primaryUi02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryUi02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryUi02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -2972,10 +2972,10 @@ object ThemeColor {
 
     @ColorInt fun primaryUi02Selected(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryUi02SelectedLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryUi02SelectedDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3003,10 +3003,10 @@ object ThemeColor {
 
     @ColorInt fun primaryUi02Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryUi02ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryUi02ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3034,10 +3034,10 @@ object ThemeColor {
 
     @ColorInt fun primaryUi03(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryUi03Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryUi03Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3065,10 +3065,10 @@ object ThemeColor {
 
     @ColorInt fun primaryUi04(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryUi04Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryUi04Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3096,10 +3096,10 @@ object ThemeColor {
 
     @ColorInt fun primaryUi05(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryUi05Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryUi05Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3127,10 +3127,10 @@ object ThemeColor {
 
     @ColorInt fun primaryUi05Selected(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryUi05SelectedLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryUi05SelectedDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3158,10 +3158,10 @@ object ThemeColor {
 
     @ColorInt fun primaryUi06(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryUi06Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryUi06Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3189,10 +3189,10 @@ object ThemeColor {
 
     @ColorInt fun primaryIcon01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryIcon01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryIcon01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3220,10 +3220,10 @@ object ThemeColor {
 
     @ColorInt fun primaryIcon01Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryIcon01ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryIcon01ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3251,10 +3251,10 @@ object ThemeColor {
 
     @ColorInt fun primaryIcon02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryIcon02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryIcon02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3282,10 +3282,10 @@ object ThemeColor {
 
     @ColorInt fun primaryIcon02Selected(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryIcon02SelectedLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryIcon02SelectedDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3313,10 +3313,10 @@ object ThemeColor {
 
     @ColorInt fun primaryIcon02Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryIcon02ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryIcon02ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3344,10 +3344,10 @@ object ThemeColor {
 
     @ColorInt fun primaryIcon03(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryIcon03Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryIcon03Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3375,10 +3375,10 @@ object ThemeColor {
 
     @ColorInt fun primaryIcon03Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryIcon03ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryIcon03ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3406,10 +3406,10 @@ object ThemeColor {
 
     @ColorInt fun primaryText01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryText01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryText01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3437,10 +3437,10 @@ object ThemeColor {
 
     @ColorInt fun primaryText02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryText02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryText02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3468,10 +3468,10 @@ object ThemeColor {
 
     @ColorInt fun primaryText02Selected(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryText02SelectedLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryText02SelectedDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3499,10 +3499,10 @@ object ThemeColor {
 
     @ColorInt fun primaryField01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryField01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryField01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3530,10 +3530,10 @@ object ThemeColor {
 
     @ColorInt fun primaryField01Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryField01ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryField01ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3561,10 +3561,10 @@ object ThemeColor {
 
     @ColorInt fun primaryField02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryField02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryField02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3592,10 +3592,10 @@ object ThemeColor {
 
     @ColorInt fun primaryField02Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryField02ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryField02ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3623,10 +3623,10 @@ object ThemeColor {
 
     @ColorInt fun primaryField03(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryField03Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryField03Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3654,10 +3654,10 @@ object ThemeColor {
 
     @ColorInt fun primaryField03Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryField03ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryField03ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3685,10 +3685,10 @@ object ThemeColor {
 
     @ColorInt fun primaryInteractive01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryInteractive01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryInteractive01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3716,10 +3716,10 @@ object ThemeColor {
 
     @ColorInt fun primaryInteractive01Hover(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryInteractive01HoverLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryInteractive01HoverDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3747,10 +3747,10 @@ object ThemeColor {
 
     @ColorInt fun primaryInteractive01Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryInteractive01ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryInteractive01ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3778,10 +3778,10 @@ object ThemeColor {
 
     @ColorInt fun primaryInteractive01Disabled(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryInteractive01DisabledLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryInteractive01DisabledDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3809,10 +3809,10 @@ object ThemeColor {
 
     @ColorInt fun primaryInteractive02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryInteractive02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryInteractive02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3840,10 +3840,10 @@ object ThemeColor {
 
     @ColorInt fun primaryInteractive02Hover(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryInteractive02HoverLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryInteractive02HoverDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3871,10 +3871,10 @@ object ThemeColor {
 
     @ColorInt fun primaryInteractive02Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryInteractive02ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryInteractive02ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3902,10 +3902,10 @@ object ThemeColor {
 
     @ColorInt fun primaryInteractive03(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 primaryInteractive03Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 primaryInteractive03Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3933,10 +3933,10 @@ object ThemeColor {
 
     @ColorInt fun secondaryUi01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 secondaryUi01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 secondaryUi01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3964,10 +3964,10 @@ object ThemeColor {
 
     @ColorInt fun secondaryUi02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 secondaryUi02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 secondaryUi02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -3995,10 +3995,10 @@ object ThemeColor {
 
     @ColorInt fun secondaryIcon01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 secondaryIcon01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 secondaryIcon01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4026,10 +4026,10 @@ object ThemeColor {
 
     @ColorInt fun secondaryIcon02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 secondaryIcon02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 secondaryIcon02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4057,10 +4057,10 @@ object ThemeColor {
 
     @ColorInt fun secondaryText01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 secondaryText01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 secondaryText01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4088,10 +4088,10 @@ object ThemeColor {
 
     @ColorInt fun secondaryText02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 secondaryText02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 secondaryText02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4119,10 +4119,10 @@ object ThemeColor {
 
     @ColorInt fun secondaryField01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 secondaryField01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 secondaryField01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4150,10 +4150,10 @@ object ThemeColor {
 
     @ColorInt fun secondaryField01Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 secondaryField01ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 secondaryField01ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4181,10 +4181,10 @@ object ThemeColor {
 
     @ColorInt fun secondaryInteractive01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 secondaryInteractive01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 secondaryInteractive01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4212,10 +4212,10 @@ object ThemeColor {
 
     @ColorInt fun secondaryInteractive01Hover(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 secondaryInteractive01HoverLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 secondaryInteractive01HoverDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4243,10 +4243,10 @@ object ThemeColor {
 
     @ColorInt fun secondaryInteractive01Active(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 secondaryInteractive01ActiveLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 secondaryInteractive01ActiveDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4274,10 +4274,10 @@ object ThemeColor {
 
     @ColorInt fun podcastUi01(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastUi01Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastUi01Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4305,10 +4305,10 @@ object ThemeColor {
 
     @ColorInt fun podcastUi02(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastUi02Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastUi02Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4336,10 +4336,10 @@ object ThemeColor {
 
     @ColorInt fun podcastUi03(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastUi03Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastUi03Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4367,10 +4367,10 @@ object ThemeColor {
 
     @ColorInt fun podcastUi04(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastUi04Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastUi04Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4398,10 +4398,10 @@ object ThemeColor {
 
     @ColorInt fun podcastUi05(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastUi05Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastUi05Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4429,10 +4429,10 @@ object ThemeColor {
 
     @ColorInt fun podcastUi06(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastUi06Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastUi06Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4460,10 +4460,10 @@ object ThemeColor {
 
     @ColorInt fun podcastIcon01(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastIcon01Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastIcon01Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4491,10 +4491,10 @@ object ThemeColor {
 
     @ColorInt fun podcastIcon02(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastIcon02Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastIcon02Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4522,10 +4522,10 @@ object ThemeColor {
 
     @ColorInt fun podcastIcon03(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastIcon03Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastIcon03Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4553,10 +4553,10 @@ object ThemeColor {
 
     @ColorInt fun podcastText01(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastText01Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastText01Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4584,10 +4584,10 @@ object ThemeColor {
 
     @ColorInt fun podcastText02(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastText02Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastText02Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4615,10 +4615,10 @@ object ThemeColor {
 
     @ColorInt fun podcastInteractive01(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastInteractive01Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastInteractive01Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4646,10 +4646,10 @@ object ThemeColor {
 
     @ColorInt fun podcastInteractive01Active(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastInteractive01ActiveLight(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastInteractive01ActiveDark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4677,10 +4677,10 @@ object ThemeColor {
 
     @ColorInt fun podcastInteractive02(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastInteractive02Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastInteractive02Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4708,10 +4708,10 @@ object ThemeColor {
 
     @ColorInt fun podcastInteractive03(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastInteractive03Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastInteractive03Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4739,10 +4739,10 @@ object ThemeColor {
 
     @ColorInt fun podcastInteractive03Active(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastInteractive03ActiveLight(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastInteractive03ActiveDark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4770,10 +4770,10 @@ object ThemeColor {
 
     @ColorInt fun podcastInteractive04(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastInteractive04Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastInteractive04Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4801,10 +4801,10 @@ object ThemeColor {
 
     @ColorInt fun podcastInteractive05(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastInteractive05Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastInteractive05Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4832,10 +4832,10 @@ object ThemeColor {
 
     @ColorInt fun podcastOndark(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastOndarkLight(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastOndarkDark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4863,10 +4863,10 @@ object ThemeColor {
 
     @ColorInt fun podcastOnlight(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 podcastOnlightLight(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 podcastOnlightDark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4894,10 +4894,10 @@ object ThemeColor {
 
     @ColorInt fun filterUi01(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterUi01Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterUi01Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4925,10 +4925,10 @@ object ThemeColor {
 
     @ColorInt fun filterUi02(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterUi02Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterUi02Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4956,10 +4956,10 @@ object ThemeColor {
 
     @ColorInt fun filterUi03(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterUi03Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterUi03Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -4987,10 +4987,10 @@ object ThemeColor {
 
     @ColorInt fun filterUi04(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterUi04Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterUi04Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5018,10 +5018,10 @@ object ThemeColor {
 
     @ColorInt fun filterIcon01(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterIcon01Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterIcon01Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5049,10 +5049,10 @@ object ThemeColor {
 
     @ColorInt fun filterIcon02(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterIcon02Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterIcon02Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5080,10 +5080,10 @@ object ThemeColor {
 
     @ColorInt fun filterText01(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterText01Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterText01Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5111,10 +5111,10 @@ object ThemeColor {
 
     @ColorInt fun filterText02(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterText02Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterText02Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5142,10 +5142,10 @@ object ThemeColor {
 
     @ColorInt fun filterInteractive01(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterInteractive01Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterInteractive01Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5173,10 +5173,10 @@ object ThemeColor {
 
     @ColorInt fun filterInteractive01Active(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterInteractive01ActiveLight(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterInteractive01ActiveDark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5204,10 +5204,10 @@ object ThemeColor {
 
     @ColorInt fun filterInteractive02(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterInteractive02Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterInteractive02Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5235,10 +5235,10 @@ object ThemeColor {
 
     @ColorInt fun filterInteractive03(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterInteractive03Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterInteractive03Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5266,10 +5266,10 @@ object ThemeColor {
 
     @ColorInt fun filterInteractive03Active(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterInteractive03ActiveLight(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterInteractive03ActiveDark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5297,10 +5297,10 @@ object ThemeColor {
 
     @ColorInt fun filterInteractive04(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterInteractive04Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterInteractive04Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5328,10 +5328,10 @@ object ThemeColor {
 
     @ColorInt fun filterInteractive05(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterInteractive05Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterInteractive05Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5359,10 +5359,10 @@ object ThemeColor {
 
     @ColorInt fun filterInteractive06(activeTheme: Theme.ThemeType, @ColorInt filterColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filterInteractive06Light(filterColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filterInteractive06Dark(filterColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5390,10 +5390,10 @@ object ThemeColor {
 
     @ColorInt fun support01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 support01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 support01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5421,10 +5421,10 @@ object ThemeColor {
 
     @ColorInt fun support02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 support02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 support02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5452,10 +5452,10 @@ object ThemeColor {
 
     @ColorInt fun support03(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 support03Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 support03Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5483,10 +5483,10 @@ object ThemeColor {
 
     @ColorInt fun support04(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 support04Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 support04Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5514,10 +5514,10 @@ object ThemeColor {
 
     @ColorInt fun support05(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 support05Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 support05Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5545,10 +5545,10 @@ object ThemeColor {
 
     @ColorInt fun support06(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 support06Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 support06Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5576,10 +5576,10 @@ object ThemeColor {
 
     @ColorInt fun support07(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 support07Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 support07Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5607,10 +5607,10 @@ object ThemeColor {
 
     @ColorInt fun support08(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 support08Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 support08Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5638,10 +5638,10 @@ object ThemeColor {
 
     @ColorInt fun support09(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 support09Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 support09Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5669,10 +5669,10 @@ object ThemeColor {
 
     @ColorInt fun support10(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 support10Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 support10Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5700,10 +5700,10 @@ object ThemeColor {
 
     @ColorInt fun playerBackground01(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerBackground01Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerBackground01Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5731,10 +5731,10 @@ object ThemeColor {
 
     @ColorInt fun playerBackground02(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerBackground02Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerBackground02Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5762,10 +5762,10 @@ object ThemeColor {
 
     @ColorInt fun playerHighlight01(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerHighlight01Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerHighlight01Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5793,10 +5793,10 @@ object ThemeColor {
 
     @ColorInt fun playerHighlight02(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerHighlight02Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerHighlight02Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5824,10 +5824,10 @@ object ThemeColor {
 
     @ColorInt fun playerHighlight03(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerHighlight03Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerHighlight03Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5855,10 +5855,10 @@ object ThemeColor {
 
     @ColorInt fun playerHighlight04(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerHighlight04Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerHighlight04Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5886,10 +5886,10 @@ object ThemeColor {
 
     @ColorInt fun playerHighlight05(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerHighlight05Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerHighlight05Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5917,10 +5917,10 @@ object ThemeColor {
 
     @ColorInt fun playerHighlight06(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerHighlight06Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerHighlight06Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5948,10 +5948,10 @@ object ThemeColor {
 
     @ColorInt fun playerHighlight07(activeTheme: Theme.ThemeType, @ColorInt podcastColor: Int): Int {
         return when (activeTheme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerHighlight07Light(podcastColor)
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerHighlight07Dark(podcastColor)
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -5979,10 +5979,10 @@ object ThemeColor {
 
     @ColorInt fun playerContrast01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerContrast01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerContrast01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6010,10 +6010,10 @@ object ThemeColor {
 
     @ColorInt fun playerContrast02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerContrast02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerContrast02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6041,10 +6041,10 @@ object ThemeColor {
 
     @ColorInt fun playerContrast03(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerContrast03Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerContrast03Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6072,10 +6072,10 @@ object ThemeColor {
 
     @ColorInt fun playerContrast04(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerContrast04Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerContrast04Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6103,10 +6103,10 @@ object ThemeColor {
 
     @ColorInt fun playerContrast05(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerContrast05Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerContrast05Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6134,10 +6134,10 @@ object ThemeColor {
 
     @ColorInt fun playerContrast06(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 playerContrast06Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 playerContrast06Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6165,10 +6165,10 @@ object ThemeColor {
 
     @ColorInt fun contrast01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 contrast01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 contrast01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6196,10 +6196,10 @@ object ThemeColor {
 
     @ColorInt fun contrast02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 contrast02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 contrast02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6227,10 +6227,10 @@ object ThemeColor {
 
     @ColorInt fun contrast03(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 contrast03Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 contrast03Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6258,10 +6258,10 @@ object ThemeColor {
 
     @ColorInt fun contrast04(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 contrast04Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 contrast04Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6289,10 +6289,10 @@ object ThemeColor {
 
     @ColorInt fun filter01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6320,10 +6320,10 @@ object ThemeColor {
 
     @ColorInt fun filter02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6351,10 +6351,10 @@ object ThemeColor {
 
     @ColorInt fun filter03(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter03Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter03Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6382,10 +6382,10 @@ object ThemeColor {
 
     @ColorInt fun filter04(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter04Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter04Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6413,10 +6413,10 @@ object ThemeColor {
 
     @ColorInt fun filter05(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter05Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter05Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6444,10 +6444,10 @@ object ThemeColor {
 
     @ColorInt fun filter06(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter06Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter06Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6475,10 +6475,10 @@ object ThemeColor {
 
     @ColorInt fun filter07(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter07Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter07Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6506,10 +6506,10 @@ object ThemeColor {
 
     @ColorInt fun filter08(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter08Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter08Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6537,10 +6537,10 @@ object ThemeColor {
 
     @ColorInt fun filter09(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter09Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter09Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6568,10 +6568,10 @@ object ThemeColor {
 
     @ColorInt fun filter10(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter10Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter10Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6599,10 +6599,10 @@ object ThemeColor {
 
     @ColorInt fun filter11(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter11Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter11Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6630,10 +6630,10 @@ object ThemeColor {
 
     @ColorInt fun filter12(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 filter12Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 filter12Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6661,10 +6661,10 @@ object ThemeColor {
 
     @ColorInt fun veil(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 veilLight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 veilDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6692,10 +6692,10 @@ object ThemeColor {
 
     @ColorInt fun gradient01A(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 gradient01ALight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 gradient01ADark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6723,10 +6723,10 @@ object ThemeColor {
 
     @ColorInt fun gradient01E(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 gradient01ELight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 gradient01EDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6754,10 +6754,10 @@ object ThemeColor {
 
     @ColorInt fun gradient02A(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 gradient02ALight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 gradient02ADark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6785,10 +6785,10 @@ object ThemeColor {
 
     @ColorInt fun gradient02E(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 gradient02ELight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 gradient02EDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6816,10 +6816,10 @@ object ThemeColor {
 
     @ColorInt fun gradient03A(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 gradient03ALight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 gradient03ADark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6847,10 +6847,10 @@ object ThemeColor {
 
     @ColorInt fun gradient03E(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 gradient03ELight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 gradient03EDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6878,10 +6878,10 @@ object ThemeColor {
 
     @ColorInt fun gradient04A(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 gradient04ALight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 gradient04ADark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6909,10 +6909,10 @@ object ThemeColor {
 
     @ColorInt fun gradient04E(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 gradient04ELight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 gradient04EDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6940,10 +6940,10 @@ object ThemeColor {
 
     @ColorInt fun gradient05A(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 gradient05ALight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 gradient05ADark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -6971,10 +6971,10 @@ object ThemeColor {
 
     @ColorInt fun gradient05E(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 gradient05ELight
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 gradient05EDark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7002,10 +7002,10 @@ object ThemeColor {
 
     @ColorInt fun imageFilter01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 imageFilter01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 imageFilter01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7033,10 +7033,10 @@ object ThemeColor {
 
     @ColorInt fun imageFilter02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 imageFilter02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 imageFilter02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7064,10 +7064,10 @@ object ThemeColor {
 
     @ColorInt fun imageFilter03(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 imageFilter03Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 imageFilter03Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7095,10 +7095,10 @@ object ThemeColor {
 
     @ColorInt fun imageFilter04(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 imageFilter04Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 imageFilter04Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7126,10 +7126,10 @@ object ThemeColor {
 
     @ColorInt fun category01(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category01Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category01Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7157,10 +7157,10 @@ object ThemeColor {
 
     @ColorInt fun category02(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category02Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category02Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7188,10 +7188,10 @@ object ThemeColor {
 
     @ColorInt fun category03(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category03Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category03Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7219,10 +7219,10 @@ object ThemeColor {
 
     @ColorInt fun category04(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category04Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category04Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7250,10 +7250,10 @@ object ThemeColor {
 
     @ColorInt fun category05(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category05Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category05Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7281,10 +7281,10 @@ object ThemeColor {
 
     @ColorInt fun category06(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category06Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category06Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7312,10 +7312,10 @@ object ThemeColor {
 
     @ColorInt fun category07(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category07Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category07Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7343,10 +7343,10 @@ object ThemeColor {
 
     @ColorInt fun category08(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category08Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category08Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7374,10 +7374,10 @@ object ThemeColor {
 
     @ColorInt fun category09(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category09Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category09Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7405,10 +7405,10 @@ object ThemeColor {
 
     @ColorInt fun category10(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category10Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category10Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7436,10 +7436,10 @@ object ThemeColor {
 
     @ColorInt fun category11(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category11Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category11Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7467,10 +7467,10 @@ object ThemeColor {
 
     @ColorInt fun category12(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category12Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category12Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7498,10 +7498,10 @@ object ThemeColor {
 
     @ColorInt fun category13(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category13Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category13Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7529,10 +7529,10 @@ object ThemeColor {
 
     @ColorInt fun category14(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category14Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category14Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7560,10 +7560,10 @@ object ThemeColor {
 
     @ColorInt fun category15(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category15Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category15Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7591,10 +7591,10 @@ object ThemeColor {
 
     @ColorInt fun category16(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category16Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category16Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7622,10 +7622,10 @@ object ThemeColor {
 
     @ColorInt fun category17(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category17Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category17Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7653,10 +7653,10 @@ object ThemeColor {
 
     @ColorInt fun category18(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category18Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category18Dark
 
             Theme.ThemeType.EXTRA_DARK ->
@@ -7684,10 +7684,10 @@ object ThemeColor {
 
     @ColorInt fun category19(theme: Theme.ThemeType): Int {
         return when (theme) {
-            Theme.ThemeType.LIGHT ->
+            Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->
                 category19Light
 
-            Theme.ThemeType.DARK ->
+            Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->
                 category19Dark
 
             Theme.ThemeType.EXTRA_DARK ->

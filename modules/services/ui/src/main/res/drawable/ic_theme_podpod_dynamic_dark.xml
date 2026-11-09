@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pod-Pod: theme picker preview for "Pod-Pod Dynamic Dark". Uses the live Material 3 roles, so it shows wallpaper colours. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="148dp"
+    android:viewportWidth="108"
+    android:viewportHeight="148">
+    <!-- Window -->
+    <path
+        android:fillColor="@color/podpod_m3_dark_surface"
+        android:pathData="M12,0L96,0A12,12 0,0 1,108 12L108,136A12,12 0,0 1,96 148L12,148A12,12 0,0 1,0 136L0,12A12,12 0,0 1,12 0z" />
+    <!-- Hero card -->
+    <path
+        android:fillColor="@color/podpod_m3_dark_primary_container"
+        android:pathData="M28,18L80,18A16,16 0,0 1,96 34L96,58A16,16 0,0 1,80 74L28,74A16,16 0,0 1,12 58L12,34A16,16 0,0 1,28 18z" />
+    <!-- Play button (rounded square) -->
+    <path
+        android:fillColor="@color/podpod_m3_dark_primary"
+        android:pathData="M30,34L40,34A6,6 0,0 1,46 40L46,52A6,6 0,0 1,40 58L30,58A6,6 0,0 1,24 52L24,40A6,6 0,0 1,30 34z" />
+    <path
+        android:fillColor="@color/podpod_m3_dark_on_primary"
+        android:pathData="M32,40L41,46L32,52z" />
+    <!-- List rows -->
+    <path
+        android:fillColor="@color/podpod_m3_dark_surface_container_highest"
+        android:pathData="M17.5,84L90.5,84A5.5,5.5 0,0 1,96 89.5L96,89.5A5.5,5.5 0,0 1,90.5 95L17.5,95A5.5,5.5 0,0 1,12 89.5L12,89.5A5.5,5.5 0,0 1,17.5 84z" />
+    <path
+        android:fillColor="@color/podpod_m3_dark_surface_container_highest"
+        android:pathData="M17.5,101L63.5,101A5.5,5.5 0,0 1,69 106.5L69,106.5A5.5,5.5 0,0 1,63.5 112L17.5,112A5.5,5.5 0,0 1,12 106.5L12,106.5A5.5,5.5 0,0 1,17.5 101z" />
+    <!-- Navigation bar with pill indicator -->
+    <path
+        android:fillColor="@color/podpod_m3_dark_surface_container"
+        android:pathData="M0,122H108V136A12,12 0,0 1,96 148H12A12,12 0,0 1,0 136V122Z" />
+    <path
+        android:fillColor="@color/podpod_m3_dark_secondary_container"
+        android:pathData="M37,129L47,129A6,6 0,0 1,53 135L53,135A6,6 0,0 1,47 141L37,141A6,6 0,0 1,31 135L31,135A6,6 0,0 1,37 129z" />
+    <path
+        android:fillColor="@color/podpod_m3_dark_on_surface_variant"
+        android:pathData="M18,135m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+    <path
+        android:fillColor="@color/podpod_m3_dark_primary"
+        android:pathData="M42,135m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+    <path
+        android:fillColor="@color/podpod_m3_dark_on_surface_variant"
+        android:pathData="M66,135m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+    <path
+        android:fillColor="@color/podpod_m3_dark_on_surface_variant"
+        android:pathData="M90,135m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+</vector>

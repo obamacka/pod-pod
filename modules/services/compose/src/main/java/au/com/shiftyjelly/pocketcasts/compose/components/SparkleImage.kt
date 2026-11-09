@@ -99,7 +99,7 @@ private fun SparkleIcon(
 
 private val ThemeType.sparkleColors
     get() = when (this) {
-        ThemeType.LIGHT, ThemeType.DARK, ThemeType.EXTRA_DARK, ThemeType.ELECTRIC -> blueSparkle
+        ThemeType.LIGHT, ThemeType.DARK, ThemeType.EXTRA_DARK, ThemeType.ELECTRIC, ThemeType.PODPOD_DYNAMIC_LIGHT, ThemeType.PODPOD_DYNAMIC_DARK -> blueSparkle
         ThemeType.CLASSIC_LIGHT, ThemeType.ROSE -> redSparkle
         ThemeType.INDIGO -> indigoSparkle
         ThemeType.DARK_CONTRAST -> graySparkle

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pod-Pod: strings for Pod-Pod-only features. Not translated. -->
+<resources>
+    <string name="podpod_theme_dynamic_light">Pod-Pod Dynamic Light</string>
+    <string name="podpod_theme_dynamic_dark">Pod-Pod Dynamic Dark</string>
+</resources>
