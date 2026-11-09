@@ -4,4 +4,9 @@
 <resources>
     <!-- Material 3 Expressive: sheets use the extra large (28dp) corner. modules/services/ui: 8dp -->
     <dimen name="bottom_sheet_corner_radius">28dp</dimen>
+
+    <!-- Mini player as a rounded floating card (modules/features/player: 12dp corners, 6dp margin, 4dp artwork) -->
+    <dimen name="mini_player_corner_radius">20dp</dimen>
+    <dimen name="mini_player_margin">8dp</dimen>
+    <dimen name="mini_player_artwork_corner_radius">8dp</dimen>
 </resources>
