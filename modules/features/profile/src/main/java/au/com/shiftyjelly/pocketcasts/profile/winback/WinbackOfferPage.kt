@@ -217,7 +217,7 @@ private fun HeartIcon(
 
 private val ThemeType.heartColors
     get() = when (this) {
-        ThemeType.LIGHT, ThemeType.DARK, ThemeType.EXTRA_DARK, ThemeType.ELECTRIC -> blueHeart
+        ThemeType.LIGHT, ThemeType.DARK, ThemeType.EXTRA_DARK, ThemeType.ELECTRIC, ThemeType.PODPOD_DYNAMIC_LIGHT, ThemeType.PODPOD_DYNAMIC_DARK -> blueHeart
         ThemeType.CLASSIC_LIGHT, ThemeType.ROSE -> redHeart
         ThemeType.INDIGO -> indigoHeart
         ThemeType.DARK_CONTRAST -> grayHeart

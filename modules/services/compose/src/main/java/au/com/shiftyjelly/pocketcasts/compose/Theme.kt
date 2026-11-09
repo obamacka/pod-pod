@@ -13,6 +13,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.isSpecified
 import androidx.compose.ui.unit.sp
+import au.com.shiftyjelly.pocketcasts.podpod.rememberPodPodDynamicThemeColors
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 
 val LocalColors = staticCompositionLocalOf { PocketCastsTheme(type = Theme.ThemeType.LIGHT, colors = ThemeLightColors) }
@@ -54,6 +55,8 @@ fun AppTheme(
 
 @Composable
 fun themeTypeToColors(themeType: Theme.ThemeType) = when (themeType) {
+    Theme.ThemeType.PODPOD_DYNAMIC_LIGHT -> rememberPodPodDynamicThemeColors(dark = false)
+    Theme.ThemeType.PODPOD_DYNAMIC_DARK -> rememberPodPodDynamicThemeColors(dark = true)
     Theme.ThemeType.LIGHT -> ThemeLightColors
     Theme.ThemeType.DARK -> ThemeDarkColors
     Theme.ThemeType.EXTRA_DARK -> ThemeExtraDarkColors
