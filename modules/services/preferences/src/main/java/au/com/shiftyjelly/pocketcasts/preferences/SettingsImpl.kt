@@ -1501,19 +1501,19 @@ class SettingsImpl @Inject constructor(
 
     override val theme = ThemeSetting.UserSettingPref(
         sharedPrefKey = "pocketCastsTheme",
-        defaultValue = ThemeSetting.DARK,
+        defaultValue = ThemeSetting.PODPOD_DYNAMIC_DARK, // Pod-Pod: Material You by default
         sharedPrefs = sharedPreferences,
     )
 
     override val darkThemePreference = ThemeSetting.UserSettingPref(
         sharedPrefKey = "PreferredDarkTheme",
-        defaultValue = ThemeSetting.DARK,
+        defaultValue = ThemeSetting.PODPOD_DYNAMIC_DARK, // Pod-Pod: Material You by default
         sharedPrefs = sharedPreferences,
     )
 
     override val lightThemePreference = ThemeSetting.UserSettingPref(
         sharedPrefKey = "PreferredLightTheme",
-        defaultValue = ThemeSetting.LIGHT,
+        defaultValue = ThemeSetting.PODPOD_DYNAMIC_LIGHT, // Pod-Pod: Material You by default
         sharedPrefs = sharedPreferences,
     )
 
