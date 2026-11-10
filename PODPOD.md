@@ -134,3 +134,12 @@ build, local or CI, can update the previous one. No secrets are needed. Without
 
 If upstream renames `SignInState.isSignedInAsPlusOrPatron`, `Settings.cachedSubscription` or
 `Settings.getFullySignedOut()`, only `PodPod.kt` and `PodPodSettings.kt` need updating.
+
+## Weekly upstream sync (automated)
+
+`.github/workflows/podpod-sync.yml` runs Mondays 03:00 UTC (and on demand via "Run workflow"):
+mirrors upstream `main`, rebases `pod-pod` onto it (auto-resolving a regenerated `ThemeColor.kt` with the sed
+above), pushes, and tags `podpod-v<upstream versionName>-<yyyymmdd>`. The tag triggers `podpod-build.yml`,
+which publishes a release only if the build is green. On any other conflict the run fails and nothing is pushed;
+the job summary lists the conflicting files. Requirements: repository secret `PODPOD_SYNC_TOKEN`
+(Contents + Workflows read/write) and `pod-pod` as the default branch (scheduled workflows only run there).

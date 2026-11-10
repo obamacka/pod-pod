@@ -1,0 +1,109 @@
+# Pod-Pod: weekly sync with upstream Pocket Casts.
+# 1. Mirrors upstream main into this fork's `main`.
+# 2. Rebases the `pod-pod` branch onto it (auto-resolves the generated ThemeColor.kt, see PODPOD.md).
+# 3. Pushes `pod-pod` and tags podpod-v<upstream versionName>-<date>, which triggers podpod-build.yml
+#    to build and publish a release (only if the build is green).
+# On a conflict it changes nothing and fails with the list of files, so GitHub sends a failure email.
+#
+# Needs the repository secret PODPOD_SYNC_TOKEN: a fine-grained token for this repo with
+# Contents + Workflows read/write (GITHUB_TOKEN may not push upstream changes to .github/workflows,
+# and its pushes would not trigger the build workflow).
+# Scheduled runs only fire from the default branch, so `pod-pod` must be the default branch.
+name: Pod-Pod upstream sync
+
+on:
+  schedule:
+    - cron: '0 3 * * 1' # Mondays 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: podpod-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check sync token
+        env:
+          SYNC_TOKEN: ${{ secrets.PODPOD_SYNC_TOKEN }}
+        run: |
+          if [ -z "$SYNC_TOKEN" ]; then
+            echo "::error::Repository secret PODPOD_SYNC_TOKEN is missing (see comment at the top of this workflow)."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+        with:
+          ref: pod-pod
+          fetch-depth: 0
+          token: ${{ secrets.PODPOD_SYNC_TOKEN }}
+
+      - name: Fetch upstream
+        run: |
+          git config user.name "Pod-Pod sync"
+          git config user.email "hal@users.noreply.github.com"
+          git remote add upstream https://github.com/Automattic/pocket-casts-android.git
+          git fetch --no-tags upstream main
+          git fetch --no-tags origin main
+
+      - name: Mirror upstream main
+        run: git push origin upstream/main:refs/heads/main
+
+      - name: Rebase pod-pod onto upstream
+        id: rebase
+        run: |
+          if git merge-base --is-ancestor upstream/main HEAD; then
+            echo "pod-pod already contains upstream main $(git rev-parse --short upstream/main)."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          resolve_themecolor() {
+            # Only ThemeColor.kt may be auto-resolved: take upstream's regenerated file and re-apply the
+            # idempotent Pod-Pod Dynamic branches (same sed as in PODPOD.md).
+            f=$(git diff --name-only --diff-filter=U)
+            [ "$(echo "$f" | wc -l)" -eq 1 ] || return 1
+            case "$f" in */ui/theme/ThemeColor.kt) ;; *) return 1 ;; esac
+            git checkout --ours -- "$f"
+            sed -i -e 's/^\(\s*\)Theme\.ThemeType\.LIGHT ->$/\1Theme.ThemeType.LIGHT, Theme.ThemeType.PODPOD_DYNAMIC_LIGHT ->/' \
+                   -e 's/^\(\s*\)Theme\.ThemeType\.DARK ->$/\1Theme.ThemeType.DARK, Theme.ThemeType.PODPOD_DYNAMIC_DARK ->/' "$f"
+            git add "$f"
+            echo "Auto-resolved $f"
+          }
+          in_rebase() { [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; }
+          git rebase upstream/main || true
+          while in_rebase; do
+            if resolve_themecolor; then
+              GIT_EDITOR=true git rebase --continue || true
+            else
+              echo "### Pod-Pod sync needs manual help" >> "$GITHUB_STEP_SUMMARY"
+              echo "Rebasing onto upstream $(git rev-parse --short upstream/main) conflicts in:" >> "$GITHUB_STEP_SUMMARY"
+              git diff --name-only --diff-filter=U | sed 's/^/- `/; s/$/`/' >> "$GITHUB_STEP_SUMMARY"
+              echo "Stopped at Pod-Pod commit: $(head -1 .git/rebase-merge/message 2>/dev/null)" >> "$GITHUB_STEP_SUMMARY"
+              git diff --name-only --diff-filter=U | while read -r f; do echo "::error file=$f::rebase conflict"; done
+              git rebase --abort || true
+              exit 1
+            fi
+          done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push pod-pod and tag release
+        if: steps.rebase.outputs.changed == 'true'
+        run: |
+          git push --force-with-lease=pod-pod origin HEAD:pod-pod
+          ver=$(grep '^versionName=' version.properties | cut -d= -f2)
+          tag="podpod-v${ver}-$(date -u +%Y%m%d)"
+          if git ls-remote --exit-code --tags origin "refs/tags/$tag" >/dev/null; then
+            tag="${tag}.$(date -u +%H%M)"
+          fi
+          git tag -a "$tag" -m "Pod-Pod synced with Pocket Casts ${ver} (upstream $(git rev-parse --short upstream/main))"
+          git push origin "$tag"
+          {
+            echo "### Pod-Pod synced"
+            echo "Rebased onto upstream \`$(git rev-parse --short upstream/main)\` (Pocket Casts ${ver}), tagged \`$tag\`."
+            echo "The release appears once podpod-build.yml finishes green."
+          } >> "$GITHUB_STEP_SUMMARY"
